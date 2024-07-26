@@ -1,14 +1,13 @@
-﻿using ReactiveUI.Fody.Helpers;
+﻿using __Prism_Essentials__;
+using ReactiveUI.Fody.Helpers;
 
 namespace MauiApp2.ViewModels;
 
+#nullable disable
 public class MainPageViewModel : BaseViewModel
 {
-    private readonly ITestSecureStore _secureStore;
-
-    public MainPageViewModel(ITestSecureStore secureStore)
+    public MainPageViewModel(BaseServices baseServices) : base(baseServices)
     {
-        _secureStore = secureStore;
         Title = "Main Page";
     }
 
@@ -17,6 +16,6 @@ public class MainPageViewModel : BaseViewModel
     public override void OnAppearing()
     {
         base.OnAppearing();
-        Name = _secureStore.Name;
+        Name = SecureStore.Name;
     }
 }

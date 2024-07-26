@@ -64,11 +64,14 @@
 		<PackageReference Include="Prism.DryIoc.Maui" Version="9.0.477-pre" />
 		<PackageReference Include="Prism.Maui" Version="9.0.477-pre" />
 		<PackageReference Include="Prism.Maui.Rx" Version="9.0.477-pre" />
+		<PackageReference Include="Prism.Plugin.Essentials" Version="9.0.70-pre" />
 		<PackageReference Include="Prism.Plugin.Essentials.Maui" Version="9.0.70-pre" />
 		<PackageReference Include="Prism.Plugin.Popups.Maui" Version="9.0.70-pre" />
 		<PackageReference Include="ReactiveUI" Version="20.1.1" />
 		<PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
 		<PackageReference Include="ReactiveUI.Maui" Version="20.1.1" />
 	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionMauiApp2HideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 </Project>
